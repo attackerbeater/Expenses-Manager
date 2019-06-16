@@ -2,26 +2,33 @@
 ## How to use
 
 - Clone the repository with __git clone__
-  open terminal go to root folder then run this like this git clone root@pc:/var/www/html# git clone https://github.com/attackerbeater/Expenses-Manager.git
+  Open terminal go to root folder eg: root@pc:/var/www/html#
 
-- Copy __.env.example__ file to __.env__ and edit database credentials there cp -R .env.exampl .env  then open the file
-sudo nano .env then add database credentials
+  then run this git clone https://github.com/attackerbeater/Expenses-Manager.git
 
-if you don't have database already you can create via terminal
+- Copy __.env.example__ file to __.env__ then edit with the database credentials
 
-mysql -u root -p
-CREATE DATABASE expensesmanager;
-exit;
+  eg: cp -R .env.example .env  
+  then open the copied file
+  sudo nano .env
+  then add database credentials
 
-hit enter to go back
+  if you don't have database already you can create via terminal
 
-within .env file
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=expensesmanager
-DB_USERNAME=root
-DB_PASSWORD=ujohn1234
+  eg:
+  mysql -u root -p
+  CREATE DATABASE expensesmanager;
+  exit;
+
+  hit enter to go back
+
+  within .env file
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=3306
+  DB_DATABASE=expensesmanager
+  DB_USERNAME=
+  DB_PASSWORD=
 
 
 - Run __composer install__
